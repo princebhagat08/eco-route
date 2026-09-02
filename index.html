@@ -5,10 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Eco RouteNaturally Clean Liquid Detergent</title>
+  <title>Eco Route</title>
 
   <meta name="description"
     content="Eco Routea naturally inspired liquid detergent made for effective cleaning and a cleaner planet." />
+
+  <link rel="icon" type="image/png" href="images/product2.jpeg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -423,8 +425,89 @@
 
 
     /* =========================================================
+       BEST SELLERS
+    ========================================================= */
+
+    .best-sellers {
+      background: var(--white);
+      padding: 70px 0 60px;
+    }
+
+    .best-sellers-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 32px;
+    }
+
+    .scroll-track {
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 12px;
+      /* hide scrollbar */
+      scrollbar-width: none;
+    }
+
+    .scroll-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .seller-card {
+      flex: 0 0 240px;
+      scroll-snap-align: start;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .seller-card-img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      display: block;
+    }
+
+    .seller-card-info {
+      padding: 14px 16px 16px;
+    }
+
+    .seller-card-info h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .seller-card-info p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .seller-card-info a {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--dark);
+      background: var(--brand);
+      padding: 7px 14px;
+      border-radius: 6px;
+      transition: opacity 0.2s;
+    }
+
+    .seller-card-info a:hover {
+      opacity: 0.8;
+    }
+
+    /* =========================================================
        INGREDIENTS
     ========================================================= */
+
 
     .ingredients-grid {
       display: grid;
@@ -1110,6 +1193,90 @@
         <div class="trust-item">♻️ Conscious packaging</div>
       </div>
     </div>
+
+    <!-- =====================================================
+         BEST SELLERS
+    ====================================================== -->
+
+    <section class="best-sellers">
+      <div class="container">
+        <div class="best-sellers-header">
+          <div>
+            <span class="section-label">Our Range</span>
+            <h2 class="section-title" style="margin-bottom:0">Best Sellers</h2>
+          </div>
+          <!-- <a href="https://wa.me/918295213174?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Eco%20Route%20products"
+            target="_blank" class="btn btn-secondary" style="flex-shrink:0">View All &rarr;</a> -->
+        </div>
+
+        <div class="scroll-track">
+          <div class="seller-card">
+            <img class="seller-card-img" src="images/product1.jpeg" alt="Eco Route Liquid Detergent" />
+            <div class="seller-card-info">
+              <h4>Liquid Detergent 1 L</h4>
+              <p>Naturally inspired everyday cleaner</p>
+              <a href="https://wa.me/918295213174?text=Hi%2C%20I%20want%20to%20order%20Eco%20Route%20Liquid%20Detergent"
+                target="_blank">🛒 Order Now</a>
+            </div>
+          </div>
+
+          <div class="seller-card">
+            <img class="seller-card-img" src="images/refil-pack.jpeg" alt="Eco Route Refill Pack" />
+            <div class="seller-card-info">
+              <h4>Refill Pack 1/2 L</h4>
+              <p>Eco-friendly refill for less waste</p>
+              <a href="https://wa.me/918295213174?text=Hi%2C%20I%20want%20to%20order%20the%20Eco%20Route%20Refill%20Pack"
+                target="_blank">🛒 Order Now</a>
+            </div>
+          </div>
+
+          <div class="seller-card">
+            <img class="seller-card-img" src="images/refil-pack.jpeg" alt="Eco Route Refill Pack"  />
+            <div class="seller-card-info">
+              <h4>Refill Pack 1 L</h4>
+              <p>Eco-friendly refill for less waste</p>
+              <a href="https://wa.me/918295213174?text=Hi%2C%20I%20want%20to%20order%20the%20Eco%20Route%20Refill%20Pack"
+                target="_blank">🛒 Order Now</a>
+            </div>
+          </div>
+
+
+          
+        <div class="scroll-track">
+          <div class="seller-card">
+            <img class="seller-card-img" src="images/product1.jpeg" alt="Eco Route Liquid Detergent" />
+            <div class="seller-card-info">
+              <h4>Liquid Detergent 1 L</h4>
+              <p>Naturally inspired everyday cleaner</p>
+              <a href="https://wa.me/918295213174?text=Hi%2C%20I%20want%20to%20order%20Eco%20Route%20Liquid%20Detergent"
+                target="_blank">🛒 Order Now</a>
+            </div>
+          </div>
+
+          <div class="seller-card">
+            <img class="seller-card-img" src="images/refil-pack.jpeg" alt="Eco Route Refill Pack" />
+            <div class="seller-card-info">
+              <h4>Refill Pack 1/2 L</h4>
+              <p>Eco-friendly refill for less waste</p>
+              <a href="https://wa.me/918295213174?text=Hi%2C%20I%20want%20to%20order%20the%20Eco%20Route%20Refill%20Pack"
+                target="_blank">🛒 Order Now</a>
+            </div>
+          </div>
+
+          <div class="seller-card">
+            <img class="seller-card-img" src="images/refil-pack.jpeg" alt="Eco Route Refill Pack"  />
+            <div class="seller-card-info">
+              <h4>Refill Pack 1 L</h4>
+              <p>Eco-friendly refill for less waste</p>
+              <a href="https://wa.me/918295213174?text=Hi%2C%20I%20want%20to%20order%20the%20Eco%20Route%20Refill%20Pack"
+                target="_blank">🛒 Order Now</a>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
 
     <!-- =====================================================
          PRODUCT
